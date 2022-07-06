@@ -1,0 +1,195 @@
+/*--Обнуление---------------------------------------------------------------------------------------------*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul, ol, li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html, body {
+	height: 100%;
+	line-height: 1.5;
+	font-size: 25px;
+	color: #000;
+	font-family: "Comic Sans MS";
+}
+
+/*------------------------------------------------------------------------------------------*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: 1380px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+}
+
+
+/*--Header---------------------------------------------------------------------------------------------*/
+
+.header {
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background-color: #023E73;
+}
+.header__container {
+	display: flex;
+	min-height: 150px;
+	justify-content:space-between;
+	align-items: center;
+	
+}
+.header__logo {
+	font-size: 30px;
+	line-height: 1.3;
+	align-items: center;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+}
+.logo_text {
+	margin: 0px 15px;
+}
+@media (max-width: 768px) {
+	.logo_text {
+		margin: 0px;
+	}
+}
+.color_blue {
+	color:#04D9D9;
+}
+.header__menu {
+	margin: 0px 0px 0px 20px;
+}
+
+.menu_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu_item {
+	margin: 0px 16px 0px 0px;
+	font-size: 25px;
+	padding: 10px 0px;
+}
+.menu_link {
+	color: white;
+	line-height: 24px;
+}
+
+/*--Footer---------------------------------------------------------------------------------------------*/
+.footer {
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background-color: #023E73;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+
+.footer__text, .communications__item, .name {
+	color: white;
+	font-size: 20px;
+	margin: 0px 15px;
+}
+@media (max-width: 600px) {
+	.name {
+		margin: 15px 0px 0px 15px;
+
+	}
+}
+
+
+
+/*--Page----------------------------------------------------------------------------------------------*/
+
+
+.page {
+	flex: 1 1 auto;
+}
+.page__title-1 {
+	font-size: 30px;
+	margin: 20px auto;
+	max-width: 360px;
+}
+.page__title-2 {
+	font-size: 30px;
+	margin: 20px auto;
+	max-width: 515px;
+}
+
+h2 {
+	font-size: 30px;
+	
+}
+
+.content_text {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0px;
+}
+
+.content_title {
+	min-width: 100%;
+}
+
+.text-with-images {
+	max-width: 600px;
+	
+}
+.content_text img {
+	max-width: 300px;
+	margin: 15px 0px 15px 0px;
+}
+
+.content-img-scheme {
+	max-width: 600px;
+}
+.scheme {
+	min-width: 600px;
+}
+
+@media (max-width: 1260px) {
+	.scheme {
+		min-width: 500px;
+	}
+}
+@media (max-width: 570px) {
+	.scheme {
+		min-width: 350px;
+	}
+}
+
+.page p, h1 {
+	padding: 15px 0px 15px 0px;
+}
+
+
+
